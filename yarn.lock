@@ -288,10 +288,10 @@ he@1.1.1:
   resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
   integrity sha1-k0EP0hsAlzUVH4howvJx80J+I/0=
 
-homing-pigeon@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/homing-pigeon/-/homing-pigeon-1.0.1.tgz#bfd974314077a9ab52f316e155123b9f306820dd"
-  integrity sha512-21KPJexPcmyiKrEC+aiMqJI7OtdFvGHu/k/DtbaQXqZE3FhYgUB+UFcO3jEk4sq3SB4rCMJrct7BDTtaY1t3iw==
+homing-pigeon@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/homing-pigeon/-/homing-pigeon-2.0.0.tgz#da21a447da0e10ecb9ddd2e355ddeed021e8853c"
+  integrity sha512-U0FUq3Yp7TVrS7MQM2OE7WwOqSvsZHdKI6DAms8VAWM0U79qCHB6GJbWkyvLmjHHZYj6wB13GNnaWlaRS4w8hA==
 
 inflight@^1.0.4:
   version "1.0.6"
