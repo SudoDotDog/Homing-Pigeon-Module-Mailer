@@ -1,0 +1,45 @@
+{
+  "name": "@homing-pigeon/module-template",
+  "version": "1.0.0",
+  "description": ":penguin: Template Plugin for Homing Pigeon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SudoDotDog/Homing-Pigeon-Module-Template.git"
+  },
+  "keywords": [
+    "Homing Pigeon"
+  ],
+  "author": "WMXPY",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SudoDotDog/Homing-Pigeon-Module-Template/issues"
+  },
+  "homepage": "https://github.com/SudoDotDog/Homing-Pigeon-Module-Template#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@sudoo/io": "^1.6.1",
+    "@sudoo/triforce": "^2.1.0",
+    "homing-pigeon": "^1.0.1"
+  },
+  "peerDependencies": {
+    "homing-pigeon": "*"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "instrument": true,
+    "reporter": [
+      "json",
+      "text-summary"
+    ],
+    "report-dir": "coverage",
+    "require": [
+      "./test/tshook.js"
+    ],
+    "sourceMap": true
+  }
+}
