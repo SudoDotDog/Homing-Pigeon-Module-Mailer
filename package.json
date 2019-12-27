@@ -22,7 +22,7 @@
     "@sudoo/io": "^1.6.1",
     "@sudoo/triforce": "^2.1.0",
     "@types/nodemailer": "^6.4.0",
-    "homing-pigeon": "^2.0.1"
+    "homing-pigeon": "^2.0.2"
   },
   "peerDependencies": {
     "homing-pigeon": "*"
