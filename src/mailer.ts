@@ -5,12 +5,20 @@
  */
 
 import { Activity, IHomingPigeonModule } from "homing-pigeon";
+import * as NodeMailer from "nodemailer";
 
 export class HomingPigeonMailerModule implements IHomingPigeonModule {
 
-    public static create(): HomingPigeonMailerModule {
+    public static create(nodeMailerOptions: any): HomingPigeonMailerModule {
 
-        return new HomingPigeonMailerModule();
+        return new HomingPigeonMailerModule(nodeMailerOptions);
+    }
+
+    private readonly _mailer;
+
+    private constructor(nodeMailerOptions: any) {
+
+        this._mailer = NodeMailer.createTransport(nodeMailerOptions);
     }
 
     public validate(activity: Activity): boolean {
