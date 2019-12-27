@@ -1,5 +1,5 @@
 /**
  * @author WMXPY
- * @namespace Module_Template
+ * @namespace Module_Mailer
  * @description Index
  */
