@@ -15,10 +15,13 @@
     "url": "https://github.com/SudoDotDog/Homing-Pigeon-Module-Template/issues"
   },
   "homepage": "https://github.com/SudoDotDog/Homing-Pigeon-Module-Template#readme",
-  "dependencies": {},
+  "dependencies": {
+    "nodemailer": "^6.4.2"
+  },
   "devDependencies": {
     "@sudoo/io": "^1.6.1",
     "@sudoo/triforce": "^2.1.0",
+    "@types/nodemailer": "^6.4.0",
     "homing-pigeon": "^1.0.1"
   },
   "peerDependencies": {
