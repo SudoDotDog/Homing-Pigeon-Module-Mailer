@@ -6,17 +6,19 @@
 
 import { Activity, IHomingPigeonModule } from "homing-pigeon";
 import * as NodeMailer from "nodemailer";
+import * as Mail from "nodemailer/lib/mailer";
+import * as SMTPTransport from "nodemailer/lib/smtp-transport";
 
 export class HomingPigeonMailerModule implements IHomingPigeonModule {
 
-    public static create(nodeMailerOptions: any): HomingPigeonMailerModule {
+    public static create(nodeMailerOptions: SMTPTransport.Options): HomingPigeonMailerModule {
 
         return new HomingPigeonMailerModule(nodeMailerOptions);
     }
 
-    private readonly _mailer;
+    private readonly _mailer: Mail;
 
-    private constructor(nodeMailerOptions: any) {
+    private constructor(nodeMailerOptions: SMTPTransport.Options) {
 
         this._mailer = NodeMailer.createTransport(nodeMailerOptions);
     }
